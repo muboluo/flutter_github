@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_github/routes/login/login_page.dart';
 import 'package:flutter_github/routes/welcome_page.dart';
 
 void main() {
@@ -28,6 +29,10 @@ class MyApp extends StatelessWidget {
         WelcomePage.name: (context) {
           return WelcomePage();
         },
+
+        LoginPage.PAGE_NAME: (context) {
+          return LoginPage();
+        }
       },
     );
   }
